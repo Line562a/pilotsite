@@ -1,0 +1,41 @@
+* {
+margin: 0;
+box-sizing: border-box;
+line-height: 1;
+font-family: basic-sans, sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: rgb(233, 233, 233)
+}
+
+img {
+vertical-align: middle;
+height: auto;
+width: 100%;
+border-radius: 8px;
+}
+
+header {
+display: flex;
+justify-content: center;
+}
+
+main {
+max-width: 80%;
+margin: 0 auto;
+}
+
+h1 {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+text-align: center;
+color: rgb(33, 33, 33);
+font-size: 4em;
+}
+
+p {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 300;
+text-align: center;
+color: rgb(33, 33, 33);
+}
