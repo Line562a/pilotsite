@@ -10,12 +10,15 @@ font-style: normal;
 }
 
 body {
-background-color: rgb(233, 233, 233)
+background-color: rgb(219, 219, 219)
 }
 
-img {
+img,
+video {
 vertical-align: middle;
 max-width: 100%;
+height: auto;
+display: block;
 }
 
 main {
@@ -29,6 +32,16 @@ font-weight: 900;
 color: rgb(33, 33, 33);
 font-size: 3em;
 line-height: 0.8;
+padding-bottom: 2%;
+}
+
+h2 {
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+color: rgb(33, 33, 33);
+font-size: 2em;
+line-height: 0.8;
+padding-bottom: 2%;
 }
 
 p {
@@ -57,6 +70,103 @@ grid-row: 2;
 place-self: start left;
 }
 
-.cover_text p {
+/* iframe  */
+	
+iframe {
+width: 100%;
+height: auto;  
+aspect-ratio: 16 / 9;
+padding: 5%;
+background-color: #7e6f96;
+}
+
+/* gallery */
+
+.gallery {
+margin: 0 auto;
+}
+
+.gallery_content {
+padding-block: 7%;
+text-align: center;
+}
+
+.billeder {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1rem;
+}
+
+.billeder .img4 {
+padding-bottom: 5%;
+}
+
+/* fuld billede  */
+
+.full_img {
+display: none;
+}
+
+/* profil  */
+
+.profil {
+padding-block: 5%;
+padding-inline: 5%;
+background-color: rgb(33, 33, 33);
+text-align: center;
+}
+
+.profil_content p, 
+.profil_content h2 {
+color: white;
+}
+
+.profil_content p {
+padding-bottom: 2%;
+}
+
+.profil_content h2 {
+line-height: 1;
+}
+
+/* video */
+
+.video2 {
 padding-top: 5%;
+}
+
+@media only screen and (min-width: 1000px) {
+.cover_text p, 
+.gallery_content p,
+.profil p {
+padding-top: 5%;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: 1fr 3fr;
+gap: 1rem;
+padding-block: 5%;
+padding-inline: 2%;
+}
+
+.gallery_content {
+padding-top: 20%;
+text-align: left;
+}
+
+.profil {
+display: grid;
+grid-template-columns: 1fr 3fr;
+gap: 3rem;
+text-align: left;
+}
+
+.full_img {
+margin-bottom: 5%;
+}
+
+.video2 {
+padding: 5%;
+}
 }
